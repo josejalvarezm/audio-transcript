@@ -1,0 +1,16 @@
+openai-whisper>=20231117
+python-dotenv>=1.0.0
+
+# For GPU acceleration (NVIDIA), install PyTorch with CUDA:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+#
+# Verify GPU is available:
+# python -c "import torch; print(torch.cuda.is_available())"
+
+# For punctuation restoration (recommended):
+# pip install deepmultilingualpunctuation
+# Note: This significantly improves transcript readability
+
+#
+# 4. Add to .env file:
+#    HF_TOKEN=your_token_here
